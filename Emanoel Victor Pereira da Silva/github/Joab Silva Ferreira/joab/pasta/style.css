@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+header {
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 10px;
+}
+nav {
+    background-color: rgb(129, 127, 255);
+    color: black;
+}
+div {
+    text-align: center;
+}
+table {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+th {
+    color: rgba(13, 13, 167, 0.623);
+}
+.teste{
+    color: darkblue;
+}
+.test{
+    color: darkgreen;
+}

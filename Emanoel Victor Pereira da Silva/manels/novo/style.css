@@ -1,0 +1,14 @@
+.test:hover > .card:not(:hover){
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 0.5s ;
+    width: 300px;
+
+}
+
+.card{
+
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}

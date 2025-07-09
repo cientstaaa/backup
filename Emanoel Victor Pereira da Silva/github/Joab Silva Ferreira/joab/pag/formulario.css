@@ -1,0 +1,65 @@
+/*formulario.css*/
+body {
+    font-family: sans-serif;
+    background-color:rgb(235, 235, 235);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    cursor: default;
+}
+.container {
+    background-color:rgb(201, 201, 201);
+    padding: 30px ;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+    width: 400px;
+    height: 490px;
+}
+h1{
+    text-align: center;     
+}
+.form-group {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #312f41;
+    box-sizing: border-box; /*a largura total será 100% incluindo padding e border*/
+}
+::placeholder {
+    text-align: center ;
+}
+input[type="submit"],
+input[type="reset"]{
+    background-color: rgb(170, 170, 170);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    color: rgb(27, 26, 26);
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: black;
+    color: white;
+}
+.bold{
+    margin-bottom:15px ;
+    background-color:rgb(235, 235, 235);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}

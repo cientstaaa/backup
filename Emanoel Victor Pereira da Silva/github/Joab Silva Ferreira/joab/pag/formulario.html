@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+      <h1>FORMULÁRIO</h1>
+        <form action="pag.html" method="post">
+         <div class="bold">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </div>
+        
+            <div class="form-group">    
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" placeholder="Digite sua mensagem" rows="10" cols="30"></textarea>
+            </div>
+        </div>
+            <input type="submit" value="Enviar" class="button"> <input type="reset" value="Cancelar" class="button">
+
+        </form>    
+    </div>    
+  
+</body>
+</html>

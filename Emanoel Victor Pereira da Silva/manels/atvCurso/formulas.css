@@ -1,0 +1,82 @@
+/* formulas.css */
+body {
+    font-family: sans-serif;
+    background-color: rgb(224, 238, 250);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    cursor: default;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: default;
+}
+
+textarea {
+    text-align: center;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea{
+    width: 90%;
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-sizing: border-box; /* altura de border e padding vai ser 100%*/
+}
+
+input[type="reset"],
+input[type="submit"]{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 90%;
+    background-color: rgb(92, 97, 97);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form {
+    background-color: white;
+    border-radius: 30px;
+    width: 400px;
+    height: 450px;
+    margin-top: 30px;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover{
+    background-color: black;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(219, 214, 214);
+    padding: 20px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

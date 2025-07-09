@@ -1,0 +1,67 @@
+/* style.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e49ab3;
+    color: #333;  
+    cursor: default;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;  /* 1 (rem - unidade de tamanho relativo ao tamanho da fonte para o elemento raiz) - define o espaçamento interno superior e inferior do elemento e o 0 define o espaçamento interno direito e esquerdo, ou seja, sem espaçamento */
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e49ab3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0) ;
+}
+
+main {
+    padding: 1rem;   /* 1 (rem) ao redor de todos os lados do elemento raiz */
+}
+
+h1 {
+    color: #e49ab3;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    margin-bottom: 1rem;   /* 1 (rem) de margem inferior para o elemento raiz */
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px rgb(0, 0, 0 ); 
+    margin-top: 10px;
+}
+
+.padi {
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;    /* Define a largura máxima do elemento como 100% da largura do elemento pai */
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid rgb(194, 47, 157);
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}

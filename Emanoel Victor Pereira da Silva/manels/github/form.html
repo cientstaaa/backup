@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+    <h2>FORMULÁRIO</h2>
+    </header>
+<main>
+    <!--da linha 17 à 45 "preencha os campos coretamente"-->
+<form action="tralala.html">
+    <fieldset>
+        <legend><h1>preencha os campos abaixo corretamente:</h1></legend>
+       
+             <label for="name"> Nome...........:</label>
+             <input type="text" id="name" value="" placeholder="digite seu nome">
+    <br><br>
+             <label for="lastname">Sobrenome...:</label>
+             <input type="text" id="lastname" name="lastname" value="" placeholder="digite seu sobrenome">
+    <br><br>
+             <label for="date">Data de nascimento.....:</label>
+             <input type="date" id="date" name="date" value="" placeholder="digite sua data de nascimento">
+    <br><br>
+             <label for="email">Email............:</label>
+             <input type="email" id="email" name="email" value="" placeholder="example@aaa.bbb">
+    <br><br>
+             <label for="password">Senha............:</label>
+             <input type="password" id="password" name="password" value="" placeholder="digite sua senha">
+    <br><br>
+             <label for="adress">Endereço......:</label>
+             <input type="text" id="adress" name="adress" value="" placeholder="digite seu endereço">
+    <br><br>
+             <label for="cellphone">n de telefone:</label>
+             <input type="tel" id="cellphone" name="cellphone" value="" placeholder="(00) 00000-0000">
+    <br><br>
+             <label for="CEP">CEP..............:</label>
+             <input type="text" id="CEP" name="CEP" value="" placeholder="digite seu CEP"><br>
+             <input type="button" value="não sei meu CEP" onclick="alert('eu também não sei seu CEP')">
+    <br><br>
+    </fieldset>
+
+<!-- da linha 48 à 61 "escolha uma linguagem favorita"-->
+    <fieldset>
+        <legend><h3>escolha uma linguagem favorita</h3></legend>
+        <input type="radio" id="html" name="ling" value="HTML">
+        <label for="html">HTML</label>
+    
+        <input type="radio" id="css" name="ling" value="CSS">
+        <label for="css">CSS</label>   
+
+        <input type="radio" id="java" name="ling" value="JAVA">
+        <label for="java">JAVA</label>
+
+        <input type="radio" id="lua" name="ling" value="LUA">
+        <label for="lua">LUA</label>
+    </fieldset>  
+       
+<br><br>
+    
+<!-- da linha 66 à 73 "estação favorita"-->
+    <fieldset>     
+      <legend><h3>estação favorita</h3></legend>
+        <input type="checkbox" id="inverno" name="inverno">
+        <label for="inverno">inverno</label>
+    <br>
+        <input type="checkbox" id="verao" name="verao">
+        <label for="verao">verao</label>
+   </fieldset> 
+
+    <br>
+
+<!--da linha 78 à 82 "escolha de cor"-->
+    <fieldset>
+        <legend><h3>COR</h3></legend>
+        <label for="color"> Escolha ou digite uma cor: </label>
+        <input type="color" id="cor" name="corfav">
+    </fieldset>
+
+<br><br>
+    
+<!-- da linha 87 à 216 "campos de data"-->
+    <fieldset>
+        <legend><h3>Digite uma data anterior à 14/02/2024</h3></legend>
+        <label for="datamax">Escreve ai</label>  
+        <input type="date" name="datamax" id="datamax" max="2024-02-14">  
+    </fieldset>
+    
+<br><br>
+     
+    <fieldset>
+        <legend><h3>Digite uma data maior que 17/03/2025</h3></legend>
+        <label for="datamin">digita ai</label>
+        <input type="date" name="datamin" id="datamin" min="2025-03-17">
+    </fieldset>
+
+<br><br>
+
+    <fieldset>
+        <legend><h3>Digite uma data entre 14/02/2024 e 22/04/2024</h3></legend>
+        <label for="datamid">Digita ai</label>
+        <input type="date" name="datamid" id="datamid" min="2024-02-14" max="2024-04-22">
+    </fieldset> 
+
+<br><br>
+
+    <fieldset>
+        <legend><h3>Digite a data e a hora do seu nascimento</h3></legend>
+        <label for="datatime1">Digita ai</label>
+        <input type="datetime-local" id="datatime1" name="datatime1"><br>
+        <input type="button" value="não sei essas informações" onclick="alert('eu também não sei essas informações')">
+    </fieldset>
+
+<br><br>
+     
+    <fieldset>
+        <legend><h3>escolha um arquivo</h3></legend>
+        <label for="file">Manda ai</label>
+        <input type="file" id="file" name="file">
+    </fieldset>
+
+<br><br>
+
+    <fieldset>
+        <legend><h3>Digita o mês e ano campeão</h3></legend>
+        <label for="mounth-year">Digita ai</label>
+        <input type="month" id="mounth-year" name="mounth-year">
+    </fieldset>
+
+<br><br>
+
+    <fieldset>
+        <legend><h3>Digita umnúmero de 10 a 100</h3></legend>
+        <label for="quantity">Digita ai:</label>
+        <input type="number" id="quantity" name="quantity" min="10" max="100" step="5" placeholder="30">
+    </fieldset>
+
+<br><br>
+    
+    <fieldset>
+        <legend><h3>Volume de 0 a 100</h3></legend>
+         <div class="volume-container">
+         <label for="volume">Volume:</label>
+         <input type="range" id="volume" min="0" max="100" value="50" oninput="updateVolumeValue(this.value)">
+         <div class="volume-value" id="volumeValue">50</div>
+     </div>
+    </fieldset>
+
+<br><br>
+
+   <fieldset>
+        <legend><h3>pesquise no google</h3></legend>
+        <label for="search"></label>
+        <input type="search" id="search" name="search">
+   </fieldset>
+
+<br><br>
+
+   <fieldset>
+    <legend><h3></h3></legend>
+    <label for="time"></label>
+    <input type="time" id="time" name="time">
+   </fieldset>
+   
+<br><br>
+
+   <fieldset>
+    <legend><h3>Digita uma semana</h3></legend>
+    <label for="week">digita ai</label>
+    <input type="week" id="week" name="week">
+  </fieldset>
+
+<br><br>
+
+    <fieldset>
+    <legend><h3>Selecione um carro</h3></legend>
+    <label for="cars">Seleciona ai:</label>
+        <select name="cars" id="cars" size="2" multiple>
+            <option value="uno" selected>uno</option>
+            <option value="gol">gol</option>
+            <option value="nissan">nissan</option>
+            <option value="audi">audi</option>
+            <option value="citroen">citroen</option>
+        </select>
+    </fieldset>
+
+<br><br>    
+
+    <fieldset>
+        <legend><h3>Descreva uma descrição</h3></legend>
+        <textarea name="text1" id="text1" rows="10" cols="30" placeholder="area de texto com 10 linhas e 30 colonas"></textarea>
+    </fieldset>
+
+<br><br>
+
+    <fieldset>
+        <legend><h3>Descreva a descrição da descrição</h3></legend>
+        <textarea name="text2" id="text2" style="width: 125px; height: 225px;" placeholder="area de texto com 125px de largura e 225px de altura"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>selecione um navegador</h3></legend>
+          <label>minha lista</label>
+            <input list="navegadores">
+                <datalist id="navegadores">
+                    <option value="opera"></option>
+                    <option value="chrome"></option>
+                    <option value="edge"></option>
+                    <option value="modizila"></option>
+                    <option value="safari"></option>
+                </datalist>
+    </fieldset>
+
+<br><br>
+
+<!-- da linha 221 à 224 "botões de enviar e cancelar"-->
+         <input type="image" src="img/sendbutton.png" alt="submit" width="100px"><br><br>
+        <input type="reset" value="limpar"  onclick=" alert('você tem certeza?')">
+        <input type="submit" value="enviar">
+        <input type="hidden" id="codigo" name="codigo" value="1342">
+    </form>
+</main>
+
+<br>
+
+<!-- da linha 230 à 237 "rodapé"-->
+<footer>
+    <h3>redes sociais</h3>
+    <h5>intagram</h5>
+    <h5>whatsapp</h5>
+    <h5>youtube</h5>
+    <h3>feito por:</h3>
+    <h5>joabs e manel</h5>
+</footer>
+</body>
+<link rel="script" href="script.js">
+</html>

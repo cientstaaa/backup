@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulas.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+    <div class="container">
+            <h1>Formulário</h1>
+        <form action="formulas.php" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+                <label for="decription">Mensagem:</label> 
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Deixe sua Mensagem"> nessa pequena área digite uma mensagem incrivel e motivadora para os nossos desenvolvedores ficarem felizes e animados para contiluarem a trabalhar com programação, um beijo e tchau.</textarea>
+            </div>
+            <input type="reset" value="limpar">
+            <input type="submit" value="enviar" onclick="alert('Formulário enviado!')">
+        </form>
+    </div>
+</main>
+</body>
+</html>
