@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital (Grid com Flex)</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <header>
+        <h1>Marketing Digital</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#" title="Link 1">Voltar</a></li>
+            <li><a href="#" title="Link 2">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="articles">
+
+            <article style="padding: 0.5em; background-color: rgb(184, 110, 174); text-align: justify;"> 
+                <h3>Serviços de Marketing</h3>
+                <figure>
+                    <img src="./img/markdig1.png" alt="">
+                </figure>
+                <p>Os serviços de marketing digital abrangem um conjunto de ações e estratégias realizadas online para promover marcas, produtos e serviços, atraindo clientes e alcançando objetivos de negócio.  </p>
+            </article>
+
+            <article style="padding: 0.5em; background-color: rgb(194, 149, 165);">
+                <h3>Marketing de Conteúdo</h3>
+                <figure>
+                    <img src="./img/markdig2.png" alt="">
+                </figure>
+                <p>O marketing de conteúdo é uma estratégia que envolve a criação e distribuição de conteúdo relevante e valioso para atrair e engajar um público-alvo, visando gerar resultados positivos para a marca.</p>
+            </article>
+
+            <article style="padding: 0.5em; background-color: rgb(168, 184, 212);">
+                <h3>Gestão de Mídias</h3>
+                <figure>
+                    <img src="./img/markdig3.png" alt="">
+                </figure>
+                <p>A gestão de mídias digitais envolve o planejamento, execução e monitoramento das atividades de comunicação e marketing em plataformas digitais.</p>
+            </article>
+
+            <article style="padding: 0.5em; background-color: rgb(191, 216, 216);">
+                <h3>Marketing de Influência</h3>
+                <figure>
+                    <img src="./img/markdig4.png" alt="">
+                </figure>
+                <p>Marketing de Influência, ou Influencer Marketing, diz respeito a uma estratégia de marketing digital envolvendo produtores de conteúdo independentes com influência sobre grandes públicos extremamente engajados.</p>
+            </article>
+        </section>
+
+        <section>
+            <form action="#"  class="newsletter">
+                <div id="formTitle">
+                    <h2>Assine Nossa Newsletter</h2>
+                </div>
+                <div id="formName">
+                    <label for="nome">Nome: <br>
+                        <input type="text" name="nome" id="nome" maxlength="60" placeholder="Seu Nome" required>
+                    </label>
+                </div>
+                <div id="formMail">
+                    <label for="mail">E-mail: <br>
+                        <input type="email" name="mail" id="mail" maxlength="60" placeholder="Seu email" required>
+                    </label>
+                </div>
+                <div id="formTele">
+                    <label for="number">Número: <br>
+                        <input type="number" name="number" id="number" maxlength="60" placeholder="Seu numero" required>
+                    </label>
+                </div>
+                <div id="formPassword">
+                    <label for="password">Senha: <br>
+                        <input type="password" name="password" id="password" maxlength="60" placeholder="Sua Senha" required>
+                    </label>
+                </div>
+                <div id="formBtn">
+                    <button type="submit" name="send" id="send">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025</p>
+        <address>
+            Contato: Prof. Xavier - <a href="https://xtisoft.info" target="_blank" title="Site do Prof. Xavier">www.xtisoft.info</a>
+        </address>
+    </footer>
+</body>
+</html>

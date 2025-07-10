@@ -1,0 +1,34 @@
+#formTitle{ grid-area: ftit;}
+#formName{grid-area: fnam;}
+#formMail{grid-area: fmai;}
+#formPassword{grid-area: fpsw;}
+#formTele{grid-area: fnmb;}
+#formBtn{grid-area: fbtn;}
+
+.menu{
+    display: flex;
+    justify-content: right;
+}
+
+main{
+    display: grid;
+}
+
+article{
+    display: flex;
+}
+
+.newsletter{
+    border: 2px solid;
+    display: grid;
+    grid-template-areas: 
+    'ftit ftit'
+    'fnam fnmb'
+    'fmai fpsw'
+    'fbtn fbtn'
+    ;
+}
+
+footer{
+    display: flex;
+}
