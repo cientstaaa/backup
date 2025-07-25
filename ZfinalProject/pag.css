@@ -8,6 +8,25 @@
     margin: 0;
     padding: 0;
     cursor: default;
+    scroll-behavior: smooth;
+    scrollbar-width: 40px;
+    scrollbar-color: green;
+}
+
+/* Para navegadores modernos */
+::-webkit-scrollbar {
+  width: 20px; /* Largura da barra de rolagem */
+
+}
+
+::-webkit-scrollbar-track {
+  background: #00b909; /* Cor do fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Cor do "polegar" (parte que se move) */
+  border-radius: o; /* Bordas arredondadas */
+  border: 30px solid #ffffff; /* Espaço entre o polegar e o fundo */
 }
 
 header{
@@ -17,7 +36,7 @@ header{
     padding: 15px 10px;
     width: 100%;
     position: fixed;
-    z-index: 999px;
+    
 }
 
 .logo{
@@ -87,18 +106,18 @@ a:hover{
     width: 60%;
 }
 
-.desc button{
+.desc input{
     padding: 10px 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 187, 0);
-    clip-path: polygon(0 0, 100% 0, 100% 65%, 85% 100%, 0 100%);
+    background: linear-gradient(130deg, rgb(0,187,0) 90%, transparent 90%);
     transition: 0.5s;
     cursor: pointer;
 }
 
-.desc button:hover{
+.desc input:hover{
     color: rgb(0, 187, 0);
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(130deg, rgb(255, 255, 255) 90%, transparent 90%);
     transform: scale(1.1);
 }
 
@@ -109,14 +128,51 @@ a:hover{
 }
 
 .desc2{
-    width: 50%;
-    margin: 40px 0 40px 60px;
+    width: 30%;
+    margin: 40px 40px 100px 100px;
 }
 
 .desc2 img{
-    width: 70%;
+    margin-top: 40px;
+    margin-left: 50px;
+    border: 20px solid rgb(0, 187, 0);
+    width: 80%;
+    height: 80%;
 }
 
 .cont{
+    padding: 60px 100px;
+    margin-top: 40px;
     color: white;
+    width: 100%;
+}
+
+.cont h6{
+    color: rgb(0, 187, 0);
+    font-size: 15px;
+}
+
+.cont h1{
+    font-size: 40px;
+    width: 120%;
+}
+
+.box{
+    display: flex;
+    width: 120%;
+}
+
+.card{
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 20px 0 0;
+}
+
+.card .fas{
+    color: rgb(0, 187, 0);
+}
+
+.card p{
+    color: grey;
+    font-size: 12px;
 }
