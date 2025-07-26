@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* aplica em tudo*/
 *{
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
@@ -9,26 +10,24 @@
     padding: 0;
     cursor: default;
     scroll-behavior: smooth;
-    scrollbar-width: 40px;
-    scrollbar-color: green;
 }
 
-/* Para navegadores modernos */
+/*scrollbar*/
 ::-webkit-scrollbar {
-  width: 20px; /* Largura da barra de rolagem */
-
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #00b909; /* Cor do fundo da barra */
+  background: #003d03;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* Cor do "polegar" (parte que se move) */
-  border-radius: o; /* Bordas arredondadas */
-  border: 30px solid #ffffff; /* Espaço entre o polegar e o fundo */
+  background-color: #ffffff; 
+  border: 5px solid #ffffff;
 }
 
+
+/*cabeçalho fixo*/
 header{
     background-image: linear-gradient(to right, rgb(0,0,0), rgb(0, 20, 0), rgb(0, 40, 0));
     display: flex;
@@ -36,7 +35,6 @@ header{
     padding: 15px 10px;
     width: 100%;
     position: fixed;
-    
 }
 
 .logo{
@@ -77,6 +75,9 @@ a:hover{
     transform: scale(1.1);
 }
 
+/*====================================================================================*/
+
+/*primeira sessão*/
 .sect1{
     background-image: url(img/home1.jpg);
     background-size: cover;
@@ -121,6 +122,9 @@ a:hover{
     transform: scale(1.1);
 }
 
+/*====================================================================================*/
+
+/*segunda sessão*/
 .sect2{
     display: flex;
     background-color: black;
@@ -135,7 +139,8 @@ a:hover{
 .desc2 img{
     margin-top: 40px;
     margin-left: 50px;
-    border: 20px solid rgb(0, 187, 0);
+    border: 10px solid rgb(0, 187, 0);
+    border-radius: 10px;
     width: 80%;
     height: 80%;
 }
@@ -166,6 +171,11 @@ a:hover{
     margin: 15px 0;
     width: 100%;
     padding: 10px 20px 0 0;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card .fas{
@@ -176,3 +186,136 @@ a:hover{
     color: grey;
     font-size: 12px;
 }
+
+/*====================================================================================*/
+
+/*terceira sessão*/
+.sect3{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    margin: 10px 80px;
+}
+
+.svcs{
+    background-color: #003d03;
+    width: 100%;
+    margin: 40px 10px;
+    display: block;
+}
+
+.svcs img{
+width: 100%;
+}
+
+.svcs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container input{
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 187, 0);
+    background: linear-gradient(130deg, rgb(0,187,0) 90%, transparent 90%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container input:hover{
+    color: rgb(0, 187, 0);
+    background: linear-gradient(130deg, rgb(255, 255, 255) 90%, transparent 90%);
+    transform: scale(1.1);
+}
+
+/*====================================================================================*/
+
+/*quarta sessão*/
+.sect4{
+    background-color: black;
+    color: white;
+    height: 100hv;
+}
+
+.precos{
+    display: flex;
+}
+
+.vlrs{
+    margin: 20px 50px;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.pdesc h5{
+    color: rgb(0, 187, 0);
+    margin-bottom: 5px;
+}
+
+.pdesc h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.fas{
+    color: rgb(0, 187, 0);
+}
+
+p{
+    margin-bottom: 30px;
+    color: grey;
+    font-size: 12px;
+}
+
+.basic{
+    border-radius: 10px;
+    background-color: rgba(0, 187, 0, 0.199);
+    background: linear-gradient(130deg, rgb(0,187,0, 0.199) 90%, transparent 90%);
+}
+
+.vlrs h4{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.vlrs h5{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.vlrs b{
+    color: rgb(0, 187, 0);
+    font-size: 50px;
+}
+
+.vlrs input{
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 187, 0);
+    background: linear-gradient(130deg, rgb(0,187,0) 90%, transparent 90%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.vlrs input:hover{
+    color: rgb(0, 187, 0);
+    background: linear-gradient(130deg, rgb(255, 255, 255) 90%, transparent 90%);
+    transform: scale(1.1);
+}
+
+.a{
+    transition: 0.5s;
+    text-align: center;
+}
+
+.a:hover{
+    transform: scale(1.1);
+}
+
+/*====================================================================================*/
