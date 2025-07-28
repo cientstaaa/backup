@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(imagens/background.jpg);
+    background-position: center;
+    background-attachment: fixed;   /* Imagem de fundo fixa */
+    background-repeat: no-repeat;
+    background-size: cover;         /* Dimensionar toda a área do container */
+    padding: 0 8%;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 12%;
+    justify-content: space-between;   /* Distribui os itens filhos ao longo do eixo principal (horizontal) de forma que haja espaço igual entre eles */
+}
+.logo {
+    cursor: pointer;
+    width: 50px;
+}
+.menu-icon {
+    cursor: pointer;
+    width: 30px;
+    margin-left: 40px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 60px;
+    list-style-type: none;
+    
+}nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    height: 88%;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+.col {
+    width: 50%;
+    margin-right: 25px;
+}
+p {
+    color: white;
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 4px;
+}
+button {
+    width: 180px;
+    color: black;
+    font-size: 14px;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid rgb(62, 182, 26)
+}
+button:hover {
+    background-color: rgb(62, 182, 26);
+}
+.card {
+    display: inline-block;
+    height: 230px;
+    width: 220px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.card:hover {
+    transform: translateY(-15px);
+}
+.card1 {
+    background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(imagens/dubai.jpg);
+    border: 1px solid rgb(62, 182, 26);
+}
+.card2 {
+    background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(imagens/singapura.jpg);
+    border: 1px solid rgb(62, 182, 26);
+}
+.card3 {
+    background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(imagens/rj.jpg);
+    border: 1px solid rgb(62, 182, 26);
+}
+.card4 {
+    background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url(imagens/ny.jpg);
+    border: 1px solid rgb(62, 182, 26);
+}
+h5 {
+    color: rgb(62, 182, 26);
+    font-size: 16px;
+}
+@media (max-width: 1120px) {
+    .container {
+        height: 180vh;
+    }
+}
